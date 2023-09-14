@@ -1,5 +1,7 @@
+import { TargetIcon } from '../Icons/TargetIcon';
 import type { Integration } from '../types';
 import { ConnectButton } from './ConnectButton';
+import { ConnectedPill } from './ConnectedPill';
 import { IntegrationsIconSlot } from './IntegrationsIconSlot';
 
 interface IntegrationsCardProps {
@@ -8,6 +10,7 @@ interface IntegrationsCardProps {
 const IntegrationsCard = ({ integration }: IntegrationsCardProps) => {
     return (
         <div className="flex flex-col gap-4 rounded-md border p-4">
+            {integration.isConnected && <ConnectedPill />}
             <IntegrationsIconSlot icon={integration.icon} />
             <div className="flex flex-col gap-1">
                 <h2 className="text-lg">{integration.heading}</h2>

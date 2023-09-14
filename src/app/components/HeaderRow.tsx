@@ -1,4 +1,5 @@
 import { CloudSnowIcon } from '../Icons/CloudSnowIcon';
+import { CompanySelect } from './CompanySelect';
 import { SearchInput } from './SearchInput';
 
 const HeaderRow = () => {
@@ -12,8 +13,10 @@ const HeaderRow = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <h1 className="text-2xl">Trysnow</h1>
-                        <p className="text-sm text-gray-500">trysnow.com</p>
+                        <CompanySelect />
+                        <p className="pl-1 text-sm text-gray-500">
+                            trysnow.com
+                        </p>
                     </div>
                 </div>
                 <SearchInput />
