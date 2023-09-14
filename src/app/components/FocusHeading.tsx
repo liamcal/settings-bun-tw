@@ -12,10 +12,10 @@ const FocusHeading = () => {
                 <ShoppingBagIcon />
             </div>
             <h1 className="font-medium">Store Settings</h1>
-            <div className="border-l-2 pl-2 text-sm text-gray-500">
+            <div className="hidden border-l-2 pl-2 text-sm text-gray-500 sm:flex">
                 View and update your store details
             </div>
-            <div className="text-sm">
+            <div className="hidden text-sm md:flex">
                 <a className="flex items-center gap-1" href="#">
                     <span>Tutorial video </span>
                     <span className="h-4 w-4">

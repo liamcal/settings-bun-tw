@@ -4,7 +4,7 @@ import { SearchInput } from './SearchInput';
 const HeaderRow = () => {
     return (
         <>
-            <div className="flex flex-row items-center justify-between pt-4">
+            <div className="flex flex-row items-center justify-between gap-4 pt-4">
                 <div className="flex flex-row gap-4">
                     <div className="item-center flex rounded-md border p-4">
                         <div className="h-6 w-6">
