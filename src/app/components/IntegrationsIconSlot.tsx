@@ -29,7 +29,7 @@ const getIcon = (icon: IntegrationIconVariant) => {
     }
 };
 const IntegrationsIconSlot = ({ icon }: IntegrationIconSlotProps) => {
-    return <div className="h-8 w-8">{getIcon(icon)}</div>;
+    return <div className="h-8 w-8 shrink-0">{getIcon(icon)}</div>;
 };
 
 export { IntegrationsIconSlot };

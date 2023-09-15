@@ -10,8 +10,10 @@ interface IntegrationsCardProps {
 const IntegrationsCard = ({ integration }: IntegrationsCardProps) => {
     return (
         <div className="flex flex-col gap-4 rounded-md border p-4">
-            {integration.isConnected && <ConnectedPill />}
-            <IntegrationsIconSlot icon={integration.icon} />
+            <div className="flex flex-row justify-between">
+                <IntegrationsIconSlot icon={integration.icon} />
+                {integration.isConnected && <ConnectedPill />}
+            </div>
             <div className="flex flex-col gap-1">
                 <h2 className="text-lg">{integration.heading}</h2>
                 <p className="text-xs text-gray-500">
